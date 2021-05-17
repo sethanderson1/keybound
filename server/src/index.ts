@@ -4,7 +4,7 @@ import cors from 'cors';
 import 'dotenv-safe/config';
 import routes from './routes/index';
 import { logger, requestLogger } from './middleware/logger';
-import setAccessHeaders from './middleware/setAccessHeaders';
+// import setAccessHeaders from './middleware/setAccessHeaders';
 import errorHandler from './middleware/errorHandler';
 import { createTypeormConn } from './utils/createTypeormConn';
 
@@ -26,7 +26,7 @@ const main = async () => {
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
 
-  app.use(setAccessHeaders);
+  // app.use(setAccessHeaders);
 
   app.use('/', routes);
 

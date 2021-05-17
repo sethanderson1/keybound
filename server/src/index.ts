@@ -4,7 +4,7 @@ import cors from 'cors';
 import 'dotenv-safe/config';
 import routes from './routes/index';
 import { logger, requestLogger } from './middleware/logger';
-// import setAccessHeaders from './middleware/setAccessHeaders';
+import setAccessHeaders from './middleware/setAccessHeaders';
 import errorHandler from './middleware/errorHandler';
 import { createTypeormConn } from './utils/createTypeormConn';
 
@@ -18,7 +18,10 @@ const main = async () => {
   const app = express();
 
   app.use(
-    cors()
+    cors({
+      origin: 'https://keybound.vercel.app',
+      credentials: true,
+    })
   );
 
   app.use(requestLogger);
@@ -26,7 +29,7 @@ const main = async () => {
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
 
-  // app.use(setAccessHeaders);
+  app.use(setAccessHeaders);
 
   app.use('/', routes);
 

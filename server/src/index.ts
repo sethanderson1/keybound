@@ -17,10 +17,6 @@ const main = async () => {
 
   const app = express();
 
-  app.use(
-    cors()
-  );
-
   app.use(requestLogger);
 
   app.use(express.urlencoded({ extended: true }));

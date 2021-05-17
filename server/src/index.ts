@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import express from 'express';
+import cors from 'cors';
 import 'dotenv-safe/config';
 import routes from './routes/index';
 import { logger, requestLogger } from './middleware/logger';
@@ -15,6 +16,10 @@ const main = async () => {
   await createTypeormConn(isDev);
 
   const app = express();
+
+  app.use(
+    cors()
+  );
 
   app.use(requestLogger);
 

@@ -38,7 +38,7 @@ export default function Layout({
         />
         <meta
           property="og:image"
-          content={`https://www.flickr.com/photos/24175515@N06/51201558969/in/dateposted/`}
+          content={`https://live.staticflickr.com/65535/51201558969_098f1a86c7_z.jpg`}
           key="ogimage"
         />
         <meta

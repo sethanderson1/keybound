@@ -4,7 +4,7 @@ import Footer from './Footer';
 import { getFavorites, getSheets } from '../../service/queryFns';
 import { useQueries } from 'react-query';
 
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Keybound';
 
 export default function Layout({
   children,
@@ -25,15 +25,27 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Keybound lets users make custom cheat sheets full of shortcuts for study and easy reference. We currently support VS Code but plan to add more resources."
+        />
+        <meta property="og:site_name" content={siteTitle} key="ogsitename" />
+        <meta name="og:title" content={siteTitle} key="ogtitle" />
+        <meta
+          property="og:description"
+          content={
+            'Keybound lets users make custom cheat sheets full of shortcuts for study and easy reference. We currently support VS Code but plan to add more resources.'
+          }
+          key="ogdesc"
         />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content={`https://www.flickr.com/photos/24175515@N06/51201558969/in/dateposted/`}
+          key="ogimage"
         />
-        <meta name="og:title" content={siteTitle} />
+        <meta
+          property="og:url"
+          content={'https://keybound.vercel.app/'}
+          key="ogurl"
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div className="flex flex-col min-h-screen ">

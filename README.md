@@ -21,7 +21,7 @@
     <a href="https://github.com/chingu-voyages/v29-bears-team-05"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/chingu-voyages/v29-bears-team-05">View Demo</a>
+    <a href="https://keybound.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/chingu-voyages/v29-bears-team-05/issues">Report Bug</a>
     ·

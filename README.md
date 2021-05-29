@@ -68,11 +68,13 @@ Keybound lets users make custom cheat sheets full of shortcuts for study and eas
 ### Built With
 
 * [React](https://reactjs.org/)
-* [Tailwind CSS](https://tailwindcss.com/)
 * [NextJS](https://nextjs.org/)
-* [TypeORM](https://typeorm.io/#/)
+* [Tailwind CSS](https://tailwindcss.com/)
 * [React Query](https://react-query.tanstack.com/)
-
+* [Node](https://nodejs.org/)
+* [Express](https://expressjs.com)
+* [TypeORM](https://typeorm.io/#/)
+* [PostgreSQL](https://www.postgresql.org/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
